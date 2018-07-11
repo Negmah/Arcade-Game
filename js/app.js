@@ -12,8 +12,8 @@ function getRandomArbitrary(min, max) {
 
 /*** GLOBAL VARS ***/
 
-const modal = document.getElementById('modal');
-const playAgain = document.getElementsByTagName('button');
+const modal = document.querySelector('#modal');
+const playAgain = document.querySelector('.playAgain');
 
 
 
@@ -34,6 +34,9 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
+playAgain.addEventListener('click', function() {
+    modal.style.opacity = '0';
+})
 
 
 
@@ -67,8 +70,11 @@ Enemy.prototype.update = function(dt) {
         this.x = 0
         this.speed = getRandomArbitrary(100, 500);
     }
+    if (player.x < this.x + 80 && player.x + 80 > this.x && player.y < this.y + 60 && 60 + player.y > this.y) {
+        player.x = 200;
+        player.y = 405;
+    }
 };
-
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
@@ -101,6 +107,13 @@ class Player {
         } else if (allowedKeys == 'down' && this.y < 380) {
             this.y += 80;
         }
+        if (this.y < 0) {
+            modal.style.opacity = '100';
+            setTimeout(function(){
+                player.x = 200;
+                player.y = 380;
+            }, 400);
+        }
         //console.log(this.y);
     }
 
@@ -117,13 +130,3 @@ let allEnemies = [
 ];
 
 const player = new Player();
-
-
-
-/*** RESTART GAME ***/
-
-
-if(player.y == -20) {
-    modal.style.opacity = '100';   
-    console.log(player.y) ;
-}
