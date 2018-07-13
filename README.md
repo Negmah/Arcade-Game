@@ -1,4 +1,4 @@
-# Arcade Game Project #4
+﻿# Arcade Game Project #4
 #### Udacity's Google Developer Challenger Scholarship - Front End Web Development
 
 [![N|Solid](https://www.stoddard.consulting/images/logos/Udacity_logo_small.png)](https://www.stoddard.consulting/images/logos/Udacity_logo_small.png)
@@ -36,7 +36,9 @@ This project aims to test each student's ability to implement Object Oriented Ja
 
 #### Play the game
 ***
-To play the game please follow this link >> [https://negmah.github.io/Arcade-Game/](https://negmah.github.io/Arcade-Game/)
+To play the game online - please follow this link >> [https://negmah.github.io/Arcade-Game/](https://negmah.github.io/Arcade-Game/)
+To play locally - clone this project using $ git clone https://github.com/Negmah/Arcade-Game.git and open the index.html file in your browser.
+
 
 ![N|Solid](http://res.cloudinary.com/negmah/image/upload/v1531404574/arcade-game-thumb.png)
 
