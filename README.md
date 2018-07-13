@@ -36,7 +36,7 @@ This project aims to test each student's ability to implement Object Oriented Ja
 
 #### Play the game
 ***
-To play the game online - please follow this link >> [https://negmah.github.io/Arcade-Game/](https://negmah.github.io/Arcade-Game/)
+To play the game online - please follow this link >> [https://negmah.github.io/Arcade-Game/](https://negmah.github.io/Arcade-Game/)<p>
 To play locally - clone this project using $ git clone https://github.com/Negmah/Arcade-Game.git and open the index.html file in your browser.
 
 
